@@ -24,33 +24,12 @@
                 ("ontouchstart"in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
             }(window, document);
         </script>
-        <!-- EmailJS -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-            publicKey: "liJBWjmYz_cMSuNa5",
-            });
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('wf-form-Contact-Form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                emailjs.sendForm('service_8eraqcb', 'wf-form-Contact-Form', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
         <link href="./assets/images/fractal-w.png" rel="shortcut icon" type="image/x-icon"/>
         <link href="./assets/images/fractal-w.png" rel=" apple-touch-icon"/>
+        <link href="./buttonStyle.css" rel="stylesheet"  type="text/css">
         <!-- Please keep this css code to improve the font quality-->
         <style>
+            
             * {
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
@@ -101,6 +80,10 @@
                     </div>
                 </div>
             </div>
+            <!-- WhatsApp Floating Button -->
+            <a href="https://wa.me/+918637425030" target="_blank" class="whatsapp-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+            </a>
             <header class="section-contact">
                 <div class="page-padding">
                     <div class="container-small">
